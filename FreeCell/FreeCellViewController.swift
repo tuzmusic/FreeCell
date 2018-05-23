@@ -111,8 +111,7 @@ class FreeCellViewController: UIViewController {
 		present(lost, animated: true, completion: nil)
 		print("You lost!")
 	}
-	
-	
+		
 	// MARK: Gameplay helper functions
 	
 	func getNewSelection(at position: Position) {

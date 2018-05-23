@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +16,47 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardsuits-1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="FRz-Bc-MME">
+                                <rect key="frame" x="309" y="179" width="407" height="411"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UH8-A2-pGp">
+                                <rect key="frame" x="432" y="598" width="160" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <state key="normal" title="FreeCell">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbv-YY-Opw">
+                                <rect key="frame" x="721" y="700" width="283" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <state key="normal" title="By Jonathan Tuzman">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FRz-Bc-MME" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="159" id="EJJ-VI-ZEr"/>
+                            <constraint firstItem="FRz-Bc-MME" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="GSh-wL-4TN"/>
+                            <constraint firstItem="FRz-Bc-MME" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="309" id="Ia8-ca-Qho"/>
+                            <constraint firstItem="UH8-A2-pGp" firstAttribute="top" secondItem="FRz-Bc-MME" secondAttribute="bottom" constant="8" symbolic="YES" id="RLj-h0-BWn"/>
+                            <constraint firstItem="UH8-A2-pGp" firstAttribute="centerX" secondItem="FRz-Bc-MME" secondAttribute="centerX" id="Vqh-2g-Izj"/>
+                            <constraint firstItem="FRz-Bc-MME" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bZO-uh-n9L"/>
+                            <constraint firstItem="cbv-YY-Opw" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="lbQ-Vx-dYe"/>
+                            <constraint firstAttribute="bottom" secondItem="cbv-YY-Opw" secondAttribute="bottom" constant="20" symbolic="YES" id="xZe-AA-j4j"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.734375" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cardsuits-1024.png" width="1024" height="1024"/>
+    </resources>
 </document>
