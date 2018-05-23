@@ -97,10 +97,7 @@ class FreeCellViewController: UIViewController {
 		if game.gameIsWon() { gameWon() }
 		if game.noMovesLeft() { gameLost() }
 	}
-	
-	@IBAction func win() { gameWon() }
-	@IBAction func lose() { gameLost() }
-	
+
 	func gameWon () {
 		let won = UIAlertController(title: "Congratulations!", message: "You win!", preferredStyle: .alert)
 		won.addAction(UIAlertAction(title: "Start new game", style: .default) { _ in self.startGame() })
