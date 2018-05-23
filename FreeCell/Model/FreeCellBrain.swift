@@ -191,6 +191,9 @@ class FreeCellBrain {
 					}
 				}
 			}
+			
+			// TO-DO: use lastSourceTried and lastDestTried to see if the only moves available are just the same move(s) over and over
+			
 		}
 		
 		return true

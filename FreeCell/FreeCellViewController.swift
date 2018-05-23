@@ -89,7 +89,7 @@ class FreeCellViewController: UIViewController {
 		postMoveCleanUp()
 	}
 	
-	func postMoveCleanUp() { //print("cleanup")
+	func postMoveCleanUp() {
 		if let (oldPos, destStack) = game.cardToMoveToSuitStack() {
 			let suitStack = Position(column: destStack, row: game.board[destStack].count-1)
 			move(from: oldPos, to: suitStack)
@@ -98,12 +98,21 @@ class FreeCellViewController: UIViewController {
 		if game.noMovesLeft() { gameLost() }
 	}
 	
+	@IBAction func win() { gameWon() }
+	@IBAction func lose() { gameLost() }
+	
 	func gameWon () {
+		let won = UIAlertController(title: "Congratulations!", message: "You win!", preferredStyle: .alert)
+		won.addAction(UIAlertAction(title: "Start new game", style: .default) { _ in self.startGame() })
+		present(won, animated: true, completion: nil)
 		print("You won!")
 	}
 	
 	func gameLost () {
-		print("No moves left!")
+		let lost = UIAlertController(title: "Sorry!", message: "No moves left :(", preferredStyle: .alert)
+		lost.addAction(UIAlertAction(title: "Start new game", style: .default) { _ in self.startGame() })
+		present(lost, animated: true, completion: nil)
+		print("You lost!")
 	}
 	
 	
