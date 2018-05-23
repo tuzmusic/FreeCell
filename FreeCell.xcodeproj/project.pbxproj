@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76D2DE0820B609B20014EF8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2DE0720B609B20014EF8B /* AppDelegate.swift */; };
-		76D2DE0A20B609B20014EF8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2DE0920B609B20014EF8B /* ViewController.swift */; };
-		76D2DE0D20B609B20014EF8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D2DE0B20B609B20014EF8B /* Main.storyboard */; };
+		7654C06C20B60A3A0079A1B6 /* GlobalTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06320B60A380079A1B6 /* GlobalTypes.swift */; };
+		7654C06D20B60A3A0079A1B6 /* FreeCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06420B60A380079A1B6 /* FreeCellViewController.swift */; };
+		7654C06E20B60A3A0079A1B6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06520B60A380079A1B6 /* CardView.swift */; };
+		7654C06F20B60A3A0079A1B6 /* FreeCellBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06620B60A380079A1B6 /* FreeCellBoardView.swift */; };
+		7654C07020B60A3A0079A1B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06720B60A390079A1B6 /* AppDelegate.swift */; };
+		7654C07120B60A3A0079A1B6 /* FreeCellBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06820B60A390079A1B6 /* FreeCellBrain.swift */; };
+		7654C07220B60A3A0079A1B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7654C06920B60A390079A1B6 /* Main.storyboard */; };
+		7654C07320B60A3A0079A1B6 /* DeckBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06A20B60A390079A1B6 /* DeckBuilder.swift */; };
+		7654C07420B60A3A0079A1B6 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06B20B60A390079A1B6 /* PlayingCardView.swift */; };
 		76D2DE0F20B609B30014EF8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D2DE0E20B609B30014EF8B /* Assets.xcassets */; };
 		76D2DE1220B609B30014EF8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76D2DE1020B609B30014EF8B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7654C06320B60A380079A1B6 /* GlobalTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTypes.swift; sourceTree = "<group>"; };
+		7654C06420B60A380079A1B6 /* FreeCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeCellViewController.swift; sourceTree = "<group>"; };
+		7654C06520B60A380079A1B6 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7654C06620B60A380079A1B6 /* FreeCellBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeCellBoardView.swift; sourceTree = "<group>"; };
+		7654C06720B60A390079A1B6 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7654C06820B60A390079A1B6 /* FreeCellBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeCellBrain.swift; sourceTree = "<group>"; };
+		7654C06920B60A390079A1B6 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		7654C06A20B60A390079A1B6 /* DeckBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckBuilder.swift; sourceTree = "<group>"; };
+		7654C06B20B60A390079A1B6 /* PlayingCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
+		7654C07820B60B3D0079A1B6 /* FreeCell-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FreeCell-Bridging-Header.h"; sourceTree = "<group>"; };
 		76D2DE0420B609B20014EF8B /* FreeCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		76D2DE0720B609B20014EF8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76D2DE0920B609B20014EF8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		76D2DE0C20B609B20014EF8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76D2DE0E20B609B30014EF8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D2DE1120B609B30014EF8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76D2DE1320B609B30014EF8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +48,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7654C07520B60A440079A1B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7654C06520B60A380079A1B6 /* CardView.swift */,
+				7654C06620B60A380079A1B6 /* FreeCellBoardView.swift */,
+				7654C06B20B60A390079A1B6 /* PlayingCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7654C07620B60A500079A1B6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7654C06A20B60A390079A1B6 /* DeckBuilder.swift */,
+				7654C06820B60A390079A1B6 /* FreeCellBrain.swift */,
+				7654C06320B60A380079A1B6 /* GlobalTypes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7654C07720B60A820079A1B6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7654C07820B60B3D0079A1B6 /* FreeCell-Bridging-Header.h */,
+				76D2DE0E20B609B30014EF8B /* Assets.xcassets */,
+				76D2DE1020B609B30014EF8B /* LaunchScreen.storyboard */,
+				76D2DE1320B609B30014EF8B /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		76D2DDFB20B609B20014EF8B = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +98,12 @@
 		76D2DE0620B609B20014EF8B /* FreeCell */ = {
 			isa = PBXGroup;
 			children = (
-				76D2DE0720B609B20014EF8B /* AppDelegate.swift */,
-				76D2DE0920B609B20014EF8B /* ViewController.swift */,
-				76D2DE0B20B609B20014EF8B /* Main.storyboard */,
-				76D2DE0E20B609B30014EF8B /* Assets.xcassets */,
-				76D2DE1020B609B30014EF8B /* LaunchScreen.storyboard */,
-				76D2DE1320B609B30014EF8B /* Info.plist */,
+				7654C06720B60A390079A1B6 /* AppDelegate.swift */,
+				7654C07520B60A440079A1B6 /* View */,
+				7654C07620B60A500079A1B6 /* Model */,
+				7654C06420B60A380079A1B6 /* FreeCellViewController.swift */,
+				7654C06920B60A390079A1B6 /* Main.storyboard */,
+				7654C07720B60A820079A1B6 /* Supporting Files */,
 			);
 			path = FreeCell;
 			sourceTree = "<group>";
@@ -96,6 +140,7 @@
 				TargetAttributes = {
 					76D2DE0320B609B20014EF8B = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -122,9 +167,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7654C07220B60A3A0079A1B6 /* Main.storyboard in Resources */,
 				76D2DE1220B609B30014EF8B /* LaunchScreen.storyboard in Resources */,
 				76D2DE0F20B609B30014EF8B /* Assets.xcassets in Resources */,
-				76D2DE0D20B609B20014EF8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,22 +180,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76D2DE0A20B609B20014EF8B /* ViewController.swift in Sources */,
-				76D2DE0820B609B20014EF8B /* AppDelegate.swift in Sources */,
+				7654C06D20B60A3A0079A1B6 /* FreeCellViewController.swift in Sources */,
+				7654C07420B60A3A0079A1B6 /* PlayingCardView.swift in Sources */,
+				7654C06E20B60A3A0079A1B6 /* CardView.swift in Sources */,
+				7654C06C20B60A3A0079A1B6 /* GlobalTypes.swift in Sources */,
+				7654C07020B60A3A0079A1B6 /* AppDelegate.swift in Sources */,
+				7654C07120B60A3A0079A1B6 /* FreeCellBrain.swift in Sources */,
+				7654C07320B60A3A0079A1B6 /* DeckBuilder.swift in Sources */,
+				7654C06F20B60A3A0079A1B6 /* FreeCellBoardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		76D2DE0B20B609B20014EF8B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				76D2DE0C20B609B20014EF8B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		76D2DE1020B609B30014EF8B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MS76ZC84AE;
 				INFOPLIST_FILE = FreeCell/Info.plist;
@@ -289,8 +333,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = TuzMusic.FreeCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FreeCell/FreeCell-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -298,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MS76ZC84AE;
 				INFOPLIST_FILE = FreeCell/Info.plist;
@@ -307,8 +354,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = TuzMusic.FreeCell;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FreeCell/FreeCell-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
