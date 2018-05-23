@@ -26,7 +26,7 @@ class PlayingCardView: CardView {
 			let centerLabel = UILabel()
 			centerLabel.frame = self.bounds
 			centerLabel.textAlignment = NSTextAlignment.center
-			centerLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 30, weight: 4)
+			centerLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 30, weight: UIFont.Weight.bold)
 			if let color = cardColor { centerLabel.textColor = color }
 			centerLabel.text = cardDescription
 			addSubview(centerLabel)
@@ -34,7 +34,7 @@ class PlayingCardView: CardView {
 			let topLabel = UILabel()
 			topLabel.frame = CGRect(x: 4, y: 3, width: cardWidth, height: cardHeight / 5.5)
 			topLabel.textAlignment = NSTextAlignment.left
-			topLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 14, weight: 2)
+			topLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 14, weight: .medium)
 			if let color = cardColor { topLabel.textColor = color }
 			topLabel.text = cardDescription
 			addSubview(topLabel)
@@ -43,7 +43,7 @@ class PlayingCardView: CardView {
 			bottomLabel.frame.size = CGSize(width: cardWidth, height: cardHeight / 5.5)
 			bottomLabel.frame.origin.x = bounds.width - bottomLabel.frame.width - 4
 			bottomLabel.frame.origin.y = bounds.height - bottomLabel.frame.height - 3
-			bottomLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 14, weight: 2)
+			bottomLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 14, weight: .medium)
 			if let color = cardColor { bottomLabel.textColor = color }
 			bottomLabel.text = cardDescription
 			bottomLabel.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))

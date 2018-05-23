@@ -137,7 +137,7 @@ class FreeCellViewController: UIViewController {
 	
 	// MARK: Gameplay action functions
 	
-	func cardClicked (_ clickedCard: UITapGestureRecognizer) {
+	@objc func cardClicked (_ clickedCard: UITapGestureRecognizer) {
 		guard let clickedCardView = clickedCard.view as? PlayingCardView else { return }
 		lastClickedPosition = clickedCardView.position
 		
@@ -148,7 +148,7 @@ class FreeCellViewController: UIViewController {
 		}
 	}
 	
-	func emptyCardColumnClicked (_ cell: UITapGestureRecognizer) {
+	@objc func emptyCardColumnClicked (_ cell: UITapGestureRecognizer) {
 		guard let clickedCell = cell.view as? CardView,
 			let selection = startOfSelection else { return }
 		lastClickedPosition = clickedCell.position
@@ -158,7 +158,7 @@ class FreeCellViewController: UIViewController {
 		}
 	}
 	
-	func cellClicked (_ cell: UITapGestureRecognizer) {
+	@objc func cellClicked (_ cell: UITapGestureRecognizer) {
 		guard let cellView = cell.view as? CardView else { return }
 		lastClickedPosition = cellView.position
 		if stackLength(for: startOfSelection) == 1 {
@@ -166,7 +166,7 @@ class FreeCellViewController: UIViewController {
 		}
 	}
 	
-	func suitClicked (_ suit: UITapGestureRecognizer) {
+	@objc func suitClicked (_ suit: UITapGestureRecognizer) {
 		guard let suitView = suit.view as? CardView else { return }
 		lastClickedPosition = suitView.position
 		if stackLength(for: startOfSelection) == 1 && game.canMove(selectedCard!, toStack: clickedColumn!) {
@@ -174,7 +174,7 @@ class FreeCellViewController: UIViewController {
 		}
 	}
 	
-	func doubleClick (_ clickedCard: UITapGestureRecognizer) {
+	@objc func doubleClick (_ clickedCard: UITapGestureRecognizer) {
 		guard let clickedCardView = clickedCard.view as? PlayingCardView else { return }
 		guard stackLength(for: startOfSelection) == 1 else { return }
 		
