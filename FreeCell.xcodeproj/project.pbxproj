@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7654C06C20B60A3A0079A1B6 /* GlobalTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06320B60A380079A1B6 /* GlobalTypes.swift */; };
+		7654C06C20B60A3A0079A1B6 /* Gamewide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06320B60A380079A1B6 /* Gamewide.swift */; };
 		7654C06D20B60A3A0079A1B6 /* FreeCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06420B60A380079A1B6 /* FreeCellViewController.swift */; };
 		7654C06E20B60A3A0079A1B6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06520B60A380079A1B6 /* CardView.swift */; };
 		7654C06F20B60A3A0079A1B6 /* FreeCellBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654C06620B60A380079A1B6 /* FreeCellBoardView.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7654C06320B60A380079A1B6 /* GlobalTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalTypes.swift; sourceTree = "<group>"; };
+		7654C06320B60A380079A1B6 /* Gamewide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gamewide.swift; sourceTree = "<group>"; };
 		7654C06420B60A380079A1B6 /* FreeCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeCellViewController.swift; sourceTree = "<group>"; };
 		7654C06520B60A380079A1B6 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		7654C06620B60A380079A1B6 /* FreeCellBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeCellBoardView.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 			children = (
 				7654C06A20B60A390079A1B6 /* DeckBuilder.swift */,
 				7654C06820B60A390079A1B6 /* FreeCellBrain.swift */,
-				7654C06320B60A380079A1B6 /* GlobalTypes.swift */,
+				7654C06320B60A380079A1B6 /* Gamewide.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -98,11 +98,11 @@
 		76D2DE0620B609B20014EF8B /* FreeCell */ = {
 			isa = PBXGroup;
 			children = (
-				7654C06720B60A390079A1B6 /* AppDelegate.swift */,
 				7654C07520B60A440079A1B6 /* View */,
 				7654C07620B60A500079A1B6 /* Model */,
 				7654C06420B60A380079A1B6 /* FreeCellViewController.swift */,
 				7654C06920B60A390079A1B6 /* Main.storyboard */,
+				7654C06720B60A390079A1B6 /* AppDelegate.swift */,
 				7654C07720B60A820079A1B6 /* Supporting Files */,
 			);
 			path = FreeCell;
@@ -183,7 +183,7 @@
 				7654C06D20B60A3A0079A1B6 /* FreeCellViewController.swift in Sources */,
 				7654C07420B60A3A0079A1B6 /* PlayingCardView.swift in Sources */,
 				7654C06E20B60A3A0079A1B6 /* CardView.swift in Sources */,
-				7654C06C20B60A3A0079A1B6 /* GlobalTypes.swift in Sources */,
+				7654C06C20B60A3A0079A1B6 /* Gamewide.swift in Sources */,
 				7654C07020B60A3A0079A1B6 /* AppDelegate.swift in Sources */,
 				7654C07120B60A3A0079A1B6 /* FreeCellBrain.swift in Sources */,
 				7654C07320B60A3A0079A1B6 /* DeckBuilder.swift in Sources */,
