@@ -243,7 +243,7 @@ class FreeCellViewController: UIViewController {
 	}
 	
 	func resetUI () {
-		for view in boardView.subviews {
+		for view in boardView.subviews where !(view is UIButton) {
 			view.removeFromSuperview()
 		}
 		
@@ -258,6 +258,11 @@ class FreeCellViewController: UIViewController {
 			}
 		}
 		addGestureRecognizersForEmptyCells()
+	}
+	
+	override func viewWillLayoutSubviews() {
+		super .viewWillLayoutSubviews()
+		resetUI()
 	}
 	
 	func addGestureRecognizersForEmptyCells () {
