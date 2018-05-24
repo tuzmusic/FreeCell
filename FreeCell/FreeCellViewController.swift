@@ -18,9 +18,10 @@ class FreeCellViewController: UIViewController {
 	
 	@IBAction func startGame () {
 		startOfSelection = nil
+		won = false
 		game.emptyBoard()
 		game.dealCards()
-		resetGameUI()
+		resetUI()
 		postMoveCleanUp()
 	}
 	
@@ -241,9 +242,7 @@ class FreeCellViewController: UIViewController {
 		newCardView.position = boardPosition
 	}
 	
-	func resetGameUI () {
-		won = false
-		startOfSelection = nil
+	func resetUI () {
 		
 		for view in boardView.subviews {
 			(view as? PlayingCardView)?.removeFromSuperview()
