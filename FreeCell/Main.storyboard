@@ -46,7 +46,6 @@
                     </view>
                     <connections>
                         <outlet property="boardView" destination="83f-JX-iRZ" id="rx9-um-kzq"/>
-                        <outlet property="restartButton" destination="DJu-Vy-ZCP" id="wyl-jg-KEv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

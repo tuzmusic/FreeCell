@@ -25,8 +25,6 @@ class FreeCellViewController: UIViewController {
 		postMoveCleanUp()
 	}
 	
-	@IBOutlet weak var restartButton: UIButton!
-	
 	// MARK: Selection and Board Interaction
 	
 	var startOfSelection: Position? {
@@ -242,8 +240,8 @@ class FreeCellViewController: UIViewController {
 		newCardView.position = boardPosition
 	}
 	
-	func resetUI () {
-		for view in boardView.subviews where !(view is UIButton) {
+	func resetUI() {
+		for view in boardView.subviews {
 			view.removeFromSuperview()
 		}
 		
