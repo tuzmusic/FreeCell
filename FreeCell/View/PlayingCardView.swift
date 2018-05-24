@@ -15,7 +15,7 @@ class PlayingCardView: CardView {
 
 	var isSelected = false {
 		didSet {
-			self.backgroundColor = self.isSelected ? UIColor.lightGray : UIColor.white
+			backgroundColor = isSelected ? UIColor.lightGray : UIColor.white
 		}
 	}
 	
@@ -29,6 +29,8 @@ class PlayingCardView: CardView {
 			centerLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 30, weight: UIFont.Weight.bold)
 			if let color = cardColor { centerLabel.textColor = color }
 			centerLabel.text = cardDescription
+			centerLabel.adjustsFontSizeToFitWidth = true
+			centerLabel.minimumScaleFactor = 0.1
 			addSubview(centerLabel)
 			
 			let topLabel = UILabel()
@@ -48,7 +50,6 @@ class PlayingCardView: CardView {
 			bottomLabel.text = cardDescription
 			bottomLabel.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
 			addSubview(bottomLabel)
-			
 		}
 	}
 }

@@ -244,7 +244,6 @@ class FreeCellViewController: UIViewController {
 	
 	func resetUI() {
 		for view in boardView.subviews where !(view is UIButton) {
-//			print(String(describing: view))
 			view.removeFromSuperview()
 		}
 		
