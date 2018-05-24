@@ -77,9 +77,9 @@ class FreeCellBoardView: UIView {
 		}
 	}
 	
-	override func draw(_ rect: CGRect) {
-		for area in [Area.freeCells, Area.suitStacks, Area.cardColumns] {
-			createEmptyCells(in: area)
-		}
-	}
+//	override func draw(_ rect: CGRect) {
+//		for area in [Area.freeCells, Area.suitStacks, Area.cardColumns] {
+//			createEmptyCells(in: area)
+//		}
+//	}
 }

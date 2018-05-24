@@ -243,9 +243,12 @@ class FreeCellViewController: UIViewController {
 	}
 	
 	func resetUI () {
-		
 		for view in boardView.subviews {
-			(view as? PlayingCardView)?.removeFromSuperview()
+			view.removeFromSuperview()
+		}
+		
+		for area in [Area.freeCells, Area.suitStacks, Area.cardColumns] {
+			boardView.createEmptyCells(in: area)
 		}
 		
 		for (col, column) in game.board.enumerated() {
