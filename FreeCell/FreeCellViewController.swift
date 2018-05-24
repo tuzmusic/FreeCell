@@ -25,6 +25,8 @@ class FreeCellViewController: UIViewController {
 		postMoveCleanUp()
 	}
 	
+	@IBOutlet weak var restartButton: UIButton!
+	
 	// MARK: Selection and Board Interaction
 	
 	var startOfSelection: Position? {
@@ -241,7 +243,8 @@ class FreeCellViewController: UIViewController {
 	}
 	
 	func resetUI() {
-		for view in boardView.subviews {
+		for view in boardView.subviews where !(view is UIButton) {
+//			print(String(describing: view))
 			view.removeFromSuperview()
 		}
 		
@@ -259,7 +262,7 @@ class FreeCellViewController: UIViewController {
 	}
 	
 	override func viewWillLayoutSubviews() {
-		super .viewWillLayoutSubviews()
+		super.viewWillLayoutSubviews()
 		resetUI()
 	}
 	

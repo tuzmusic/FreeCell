@@ -22,30 +22,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mkC-KN-Ryy">
-                                <rect key="frame" x="20" y="719" width="122" height="41"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJu-Vy-ZCP">
-                                        <rect key="frame" x="0.0" y="0.0" width="122" height="41"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                        <state key="normal" title="New Game">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jns-bw-ZfG"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJu-Vy-ZCP">
+                                <rect key="frame" x="20" y="707" width="122" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="New Game">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jns-bw-ZfG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="mkC-KN-Ryy" firstAttribute="leading" secondItem="83f-JX-iRZ" secondAttribute="leadingMargin" id="E3f-At-F5J"/>
-                            <constraint firstItem="Y3G-P3-5uK" firstAttribute="top" secondItem="mkC-KN-Ryy" secondAttribute="bottom" constant="8" symbolic="YES" id="tJs-nh-ZaV"/>
+                            <constraint firstItem="DJu-Vy-ZCP" firstAttribute="leading" secondItem="83f-JX-iRZ" secondAttribute="leadingMargin" id="PtR-f9-uFB"/>
+                            <constraint firstAttribute="bottom" secondItem="DJu-Vy-ZCP" secondAttribute="bottom" constant="20" symbolic="YES" id="bUf-xN-Xac"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="boardView" destination="83f-JX-iRZ" id="rx9-um-kzq"/>
+                        <outlet property="restartButton" destination="DJu-Vy-ZCP" id="wyl-jg-KEv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
