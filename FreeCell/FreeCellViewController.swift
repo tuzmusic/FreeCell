@@ -105,9 +105,9 @@ class FreeCellViewController: UIViewController {
 				self.move(from: oldPos, to: suitStack)
 			}
 			RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.2))
-			if game.gameIsWon() && !won { won = true }
-			if game.noMovesLeft() { gameLost() }
 		}
+		if game.gameIsWon() && !won { won = true }
+		if game.noMovesLeft() { gameLost() }
 	}
 
 	func gameWon () {
