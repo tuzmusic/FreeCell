@@ -90,18 +90,23 @@ class FreeCellViewController: UIViewController {
 		postMoveCleanUp()
 	}
 	
+	var won = false {
+		didSet {
+			if won {
+				gameWon()
+			}
+		}
+	}
+	
 	func postMoveCleanUp() {
-		
-		
-
 		if let (oldPos, destStack) = game.cardToMoveToSuitStack() {
 			let suitStack = Position(column: destStack, row: game.board[destStack].count-1)
-			_ = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { _ in
+			_ = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: false) {  _ in
 				self.move(from: oldPos, to: suitStack)
-				if self.game.gameIsWon() { gameWon() }
-				if self.game.noMovesLeft() { gameLost() }
 			}
-			RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.6))
+			RunLoop.main.run(until: Date(timeIntervalSinceNow: 0.2))
+			if game.gameIsWon() && !won { won = true }
+			if game.noMovesLeft() { gameLost() }
 		}
 	}
 
@@ -237,6 +242,7 @@ class FreeCellViewController: UIViewController {
 	}
 	
 	func resetGameUI () {
+		won = false
 		startOfSelection = nil
 		
 		for view in boardView.subviews {
