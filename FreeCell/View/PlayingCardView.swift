@@ -21,35 +21,37 @@ class PlayingCardView: CardView {
 	
 	var cardColor: UIColor?
 	
+	fileprivate func setupLabel(_ label: UILabel) {
+		label.text = cardDescription
+		label.adjustsFontSizeToFitWidth = true
+		label.minimumScaleFactor = 0.1
+		if let color = cardColor { label.textColor = color }
+		addSubview(label)
+	}
+	
 	var cardDescription: String? {
 		didSet {
 			let centerLabel = UILabel()
 			centerLabel.frame = self.bounds
 			centerLabel.textAlignment = NSTextAlignment.center
-			centerLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 30, weight: UIFont.Weight.bold)
-			if let color = cardColor { centerLabel.textColor = color }
-			centerLabel.text = cardDescription
-			centerLabel.adjustsFontSizeToFitWidth = true
-			centerLabel.minimumScaleFactor = 0.1
-			addSubview(centerLabel)
+			centerLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 30, weight: .bold)
+			setupLabel(centerLabel)
 			
-			let topLabel = UILabel()
-			topLabel.frame = CGRect(x: 4, y: 3, width: cardWidth, height: cardHeight / 5.5)
+			let smallSize = CGSize(width: cardWidth, height: cardHeight / 5.5)
+			let smallFont = UIFont.monospacedDigitSystemFont(ofSize: 14, weight: .medium)
+			
+			let topLabel = UILabel(frame: CGRect(origin: CGPoint(x: 4, y: 3), size: smallSize))
 			topLabel.textAlignment = NSTextAlignment.left
-			topLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 14, weight: .medium)
-			if let color = cardColor { topLabel.textColor = color }
-			topLabel.text = cardDescription
-			addSubview(topLabel)
+			topLabel.font = smallFont
+			setupLabel(topLabel)
 			
 			let bottomLabel = UILabel()
-			bottomLabel.frame.size = CGSize(width: cardWidth, height: cardHeight / 5.5)
-			bottomLabel.frame.origin.x = bounds.width - bottomLabel.frame.width - 4
-			bottomLabel.frame.origin.y = bounds.height - bottomLabel.frame.height - 3
-			bottomLabel.font = UIFont.monospacedDigitSystemFont(ofSize: 14, weight: .medium)
-			if let color = cardColor { bottomLabel.textColor = color }
-			bottomLabel.text = cardDescription
+			bottomLabel.frame.size = smallSize
+			bottomLabel.frame.origin = CGPoint(x: bounds.width - bottomLabel.frame.width - 4,
+														  y: bounds.height - bottomLabel.frame.height - 3)
+			bottomLabel.font = smallFont
 			bottomLabel.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
-			addSubview(bottomLabel)
+			setupLabel(bottomLabel)
 		}
 	}
 }
